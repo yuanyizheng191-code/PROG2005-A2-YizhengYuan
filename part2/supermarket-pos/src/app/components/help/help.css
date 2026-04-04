@@ -1,0 +1,81 @@
+.help-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+h1 {
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #6c757d;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.faq-section,
+.troubleshooting,
+.contact-support {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #1e8e3e;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.faq-item,
+.trouble-item {
+    margin-bottom: 24px;
+    padding: 16px;
+    background: #f9fafb;
+    border-radius: 12px;
+}
+
+.faq-item h3,
+.trouble-item h3 {
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+.faq-item p,
+.trouble-item p {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.contact-support {
+    padding: 24px;
+    background: linear-gradient(135deg, #1e8e3e 0%, #166534 100%);
+    border-radius: 16px;
+    color: white;
+}
+
+.contact-support h2 {
+    color: white;
+}
+
+.contact-support p {
+    margin-bottom: 12px;
+}
+
+.contact-support ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-support li {
+    padding: 8px 0;
+}
+
+@media (max-width: 768px) {
+    .help-container {
+        padding: 20px;
+    }
+}

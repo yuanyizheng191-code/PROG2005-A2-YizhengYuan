@@ -1,0 +1,35 @@
+<div class="app-container">
+    <header class="header">
+        <div class="logo">
+            <span class="logo-icon">🛒</span>
+            <h1>EasyMart POS System</h1>
+        </div>
+        <div class="header-info">
+            <span class="date">{{ currentDate }}</span>
+            <span class="cashier">Cashier: Admin</span>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a routerLink="/" routerLinkActive="active" class="nav-link">🏠 Home</a>
+        <a routerLink="/products" routerLinkActive="active" class="nav-link">📦 Products</a>
+        <a routerLink="/add-product" routerLinkActive="active" class="nav-link">➕ Add Product</a>
+        <a routerLink="/cart" routerLinkActive="active" class="nav-link" id="cart-link">
+            🧾 Cart
+            @if (cartItemsCount > 0) {
+                <span class="cart-badge">{{ cartItemsCount }}</span>
+            }
+        </a>
+        <a routerLink="/search" routerLinkActive="active" class="nav-link">🔍 Search</a>
+        <a routerLink="/privacy" routerLinkActive="active" class="nav-link">🔒 Privacy</a>
+        <a routerLink="/help" routerLinkActive="active" class="nav-link">❓ Help</a>
+    </nav>
+
+    <main class="main-content">
+        <router-outlet></router-outlet>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 EasyMart Supermarket. All rights reserved.</p>
+    </footer>
+</div>
